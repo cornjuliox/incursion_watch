@@ -7,7 +7,6 @@ import { Row, Col } from 'reactstrap';
 
 import loader from './fruits-watermelon.gif';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 
 const DEAD_CENTER = {
   margin: 'auto',
@@ -53,7 +52,7 @@ class App extends Component {
       .then(() => {
         this.incs = rawIncs.map(inc => {
           return (
-            <Col xs="1" lg="4">
+            <Col xs="12" lg="4">
               <IncursionCard incursion={inc}/>
             </Col>
           )
@@ -83,7 +82,21 @@ class App extends Component {
       )
     } else {
       return (
-        <div>
+        <div className="text-center">
+          <div>
+            <p>
+              This website is a tool designed to help EVE Online players locate
+              and track Incursions within the game's universe.
+            </p>
+            <p>
+              Incursions are EVE Online's version of 'raids'. End-game fleet-based
+              PVE encounters which fleets of pilots work to drive back NPC
+              pirate invasions across the game's universe.
+            </p> 
+            <p>
+
+            </p> 
+          </div>
           {this.incs}
         </div>
       )
