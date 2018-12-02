@@ -90,7 +90,7 @@ class App extends Component {
             </p>
             <p>
               Incursions are EVE Online's version of 'raids'. End-game fleet-based
-              PVE encounters which fleets of pilots work to drive back NPC
+              PVE encounters in which fleets of pilots work to drive back NPC
               pirate invasions across the game's universe.
             </p> 
             <p>

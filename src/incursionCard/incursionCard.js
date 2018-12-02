@@ -11,10 +11,11 @@ import SolarSystemItem from './components/solarSystemItem';
 import InfluenceItem from './components/influenceItem';
 import InfestedSystemsItem from './components/infestedSystemsItem';
 import MobilizingItem from './components/mobilizingItem';
-
+import BossItem from './components/bossItem';
 
 class IncursionCard extends Component {
   render() {
+    console.log(`${this.props.incursion.has_boss}`);
     return (
       <div>
         <Card className='my-2'>
@@ -34,6 +35,9 @@ class IncursionCard extends Component {
                   solarSystemId={this.props.incursion.staging_solar_system_id}
                   titleText="Staging System: ">
                 </SolarSystemItem>
+                <BossItem
+                  hasBoss={this.props.incursion.has_boss}>
+                </BossItem>
                 <InfestedSystemsItem 
                   infestedSystems={this.props.incursion.infested_solar_systems}>
                 </InfestedSystemsItem>
