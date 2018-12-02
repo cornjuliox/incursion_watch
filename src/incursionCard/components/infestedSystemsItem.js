@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {
-  ListGroupItem,
-  ListGroup
+  ListGroup,
+  ListGroupItem
 } from 'reactstrap';
 
 import SolarSystemItem from './solarSystemItem';
 
 const SCROLLABLE_LISTGROUPITEM = {
-  maxHeight: '450px',
+  maxHeight: '200px',
   overflow: 'scroll'
 }
 

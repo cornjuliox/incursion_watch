@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {
   Progress,
-  ListGroupItem
 } from 'reactstrap';
 
 export default class InfluenceItem extends Component {
@@ -18,10 +17,8 @@ export default class InfluenceItem extends Component {
     }
     return (
       <div className="text-center">
-        <ListGroupItem>
-          <div className="text-center">Influence @ {influenceValue}%</div>
+          <div>Influence @ {influenceValue}%</div>
           <Progress value={influenceValue} color={barColor}></Progress>
-        </ListGroupItem>
       </div>
     )
   }

@@ -40,12 +40,10 @@ export default class SolarSystemItem extends Component {
 
     return (
       <div>
-        <ListGroupItem className="text-center">
-          {this.props.titleText} 
-          <a href={`https://evemaps.dotlan.net/system/${this.state.stagingSolarSystem}`}>
-            <p className={colorText}>{this.state.stagingSolarSystem} ({realSecurityStatus})</p>
-          </a> 
-        </ListGroupItem>
+        <p className="float-left">{this.props.titleText}</p>
+        <a className="float-right" href={`https://evemaps.dotlan.net/system/${this.state.stagingSolarSystem}`}>
+          <p className={colorText}>{this.state.stagingSolarSystem} ({realSecurityStatus})</p>
+        </a> 
       </div>
     )
   }

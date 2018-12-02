@@ -5,8 +5,20 @@ import chunk from 'lodash.chunk';
 
 import { Row, Col } from 'reactstrap';
 
+import loader from './fruits-watermelon.gif';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
+const DEAD_CENTER = {
+  margin: 'auto',
+  position: 'absolute',
+  bottom: 0,
+  left: 0,
+  top: 0,
+  right: 0,
+  height: 'auto',
+  width: 'auto',
+}
 
 class App extends Component {
   constructor(props) {
@@ -15,6 +27,7 @@ class App extends Component {
     this.incs = [];
 
     this.getWholeIncursions = this.getWholeIncursions.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this)
   }
 
   getWholeIncursions() {
@@ -28,10 +41,10 @@ class App extends Component {
       });
   }
 
-  render() {
+  componentDidMount() {
     // NOTE: I'm really not happy with this particular bit of code
     //       it seems like a shitty, hacky way to turn an asynchronous process
-    //       synchronous.
+    //       synchronous. But, it works. 
     let rawIncs = [];
     this.getWholeIncursions()
       .then(data => {
@@ -57,11 +70,25 @@ class App extends Component {
         this.setState({})
       })
 
-    return (
-      <div>
-        {this.incs}
-      </div>
-    )
+  }
+
+  render() {
+
+    if (this.incs === undefined || this.incs.length === 0) {
+      return (
+        <div className="m-5 text-center">
+          <img src={loader} alt=""/>
+          <p>Please enjoy this watermelon while we fetch incursion data.</p>
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          {this.incs}
+        </div>
+      )
+    }
+
   }
 }
 

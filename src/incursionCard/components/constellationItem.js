@@ -31,9 +31,12 @@ export default class ConstellationComponent extends Component {
   render() {
     return (
       <div>
-        <ListGroupItem className='text-center'>
-          <a href={`https://evemaps.dotlan.net/map/${this.state.regionName}/${this.state.constellationName}`}><h1>{this.state.constellationName}</h1></a>
-        </ListGroupItem>
+          <a 
+            className="text-center" 
+            href={`https://evemaps.dotlan.net/map/${this.state.regionName}/${this.state.constellationName}`}
+          >
+            <h1>{this.state.constellationName}</h1>
+          </a>
       </div>
     )
   }
