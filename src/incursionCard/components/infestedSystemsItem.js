@@ -21,7 +21,7 @@ export default class InfestedSystemsItem extends Component {
       <div>
         <ListGroupItem style={SCROLLABLE_LISTGROUPITEM}>
           <p>Infested Solar Systems:</p>
-          <ListGroup>
+          <ListGroup className="mt-3">
             {systems}
           </ListGroup>
         </ListGroupItem>

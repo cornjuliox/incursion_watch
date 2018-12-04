@@ -8,17 +8,6 @@ import { Row, Col } from 'reactstrap';
 import loader from './fruits-watermelon.gif';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const DEAD_CENTER = {
-  margin: 'auto',
-  position: 'absolute',
-  bottom: 0,
-  left: 0,
-  top: 0,
-  right: 0,
-  height: 'auto',
-  width: 'auto',
-}
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -85,17 +74,15 @@ class App extends Component {
         <div className="text-center">
           <div>
             <p>
+              Incursions in EVE Online are EVE encounters in which 
+              fleets of pilots work to drive back NPC pirate invasions in 
+              across the game's universe. They represent high-end PVE content
+              and are equivalent to 'raids' in other MMOs.
+            </p> 
+            <p>
               This website is a tool designed to help EVE Online players locate
-              and track Incursions within the game's universe.
+              and track the status of Incursions within the game's universe.
             </p>
-            <p>
-              Incursions are EVE Online's version of 'raids'. End-game fleet-based
-              PVE encounters in which fleets of pilots work to drive back NPC
-              pirate invasions across the game's universe.
-            </p> 
-            <p>
-
-            </p> 
           </div>
           {this.incs}
         </div>
