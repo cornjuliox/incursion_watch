@@ -1,26 +1,50 @@
 import React, { Component } from 'react';
 import {
-  Alert
+  Alert,
 } from 'reactstrap';
-const INCURSIONSTATES = {
-  'mobilizing': 
-    <Alert color="warning" className="text-center">MOBILIZING</Alert>,
-  'established': 
-    <Alert color="success" className="text-center">ESTABLISHED</Alert>,
-  'withdrawing': 
-    <Alert color="danger" className="text-center">WITHDRAWING</Alert>
-}
+
+
 
 export default class MobilizingItem extends Component {
-  render() {
+  constructor(props) {
+    super(props);
 
+    this.INCURSIONSTATES = {
+      'mobilizing': 
+        <Alert 
+          color="warning" 
+          className="text-center" 
+          id="mobilizationStatus"
+        >
+          MOBILIZING
+        </Alert>,
+      'established': 
+        <Alert 
+          color="success" 
+          className="text-center" 
+          id="mobilizationStatus"
+        >
+          ESTABLISHED
+        </Alert>,
+      'withdrawing': 
+        <Alert 
+          color="danger" 
+          className="text-center" 
+          id="mobilizationStatus"
+        >
+          WITHDRAWING
+        </Alert>
+    }
+
+  }
+
+  render() {
     return (
       <div>
           {
-            INCURSIONSTATES[this.props.incursionState]
+            this.INCURSIONSTATES[this.props.incursionState]
           }
       </div>
     )
-
   }
 }

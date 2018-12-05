@@ -55,7 +55,9 @@ class App extends Component {
         })
       })
       .then(() => {
-        this.setState({})
+        this.setState({
+          random: 'foobar'
+        })
       })
 
   }
@@ -71,20 +73,34 @@ class App extends Component {
       )
     } else {
       return (
-        <div className="text-center">
-          <div>
-            <p>
-              Incursions in EVE Online are EVE encounters in which 
-              fleets of pilots work to drive back NPC pirate invasions in 
-              across the game's universe. They represent high-end PVE content
-              and are equivalent to 'raids' in other MMOs.
-            </p> 
-            <p>
-              This website is a tool designed to help EVE Online players locate
-              and track the status of Incursions within the game's universe.
-            </p>
+        <div>
+          <div class="container text-center">
+            <h1>Incursion Watch</h1>
           </div>
-          {this.incs}
+          <div className="text-center">
+            <div>
+              <p>
+                Incursions in EVE Online are EVE encounters in which 
+                fleets of pilots work to drive back NPC pirate invasions in 
+                across the game's universe. They represent high-end PVE content
+                and are equivalent to 'raids' in other MMOs.
+              </p> 
+              <p>
+                This website is a tool designed to help EVE Online players locate
+                and track the status of Incursions within the game's universe.
+              </p>
+            </div>
+            {this.incs}
+          </div>
+          <div>
+            <footer className="footer">
+              <div className="container text-center">
+                <span className="text-muted">
+                  This site was built using React+JSX. 
+                </span>
+              </div>
+            </footer>
+          </div>
         </div>
       )
     }
