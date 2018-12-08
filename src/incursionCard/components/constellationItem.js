@@ -23,6 +23,8 @@ export default class ConstellationComponent extends Component {
           regionName: res.data.name
         })
       })
+      .then(() => {
+      })
   }
 
   render() {
@@ -34,16 +36,21 @@ export default class ConstellationComponent extends Component {
       )
     } else {
         return (
-          <div>
+          <div className="text-center">
               <a 
-                className="text-center" 
+                className="" 
+                title="The constellation where the incursion is happening."
                 href={`https://evemaps.dotlan.net/map/${this.state.regionName}/${this.state.constellationName}`}
               >
-                <h1>{this.state.constellationName}</h1>
+                <h3 className="">{this.state.constellationName}</h3>
               </a>
-                <a href={`https://evemaps.dotlan.net/map/${this.state.regionName.split(' ').join('_')}`} className="text-center">
-                  <h5>({this.state.regionName})</h5>
-                </a>
+              <a 
+                className=""
+                title="The region that the constellation belongs to."
+                href={`https://evemaps.dotlan.net/map/${this.state.regionName.split(' ').join('_')}`} 
+              >
+                <h4>({this.state.regionName})</h4>
+              </a>
           </div>
         )
       }

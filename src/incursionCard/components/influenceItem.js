@@ -16,7 +16,13 @@ export default class InfluenceItem extends Component {
       barColor = 'warning';
     }
     return (
-      <div className="text-center">
+      <div 
+        className="text-center"
+        title="
+          The level of influence the incursion has on the constellation. 
+          This affects the severity of system-wide incursion penalties.
+          Lower influence rating == lower penalties."
+      >
           <div>Influence @ {influenceValue}%</div>
           <Progress value={influenceValue} color={barColor}></Progress>
       </div>

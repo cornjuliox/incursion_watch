@@ -17,7 +17,10 @@ export default class BossItem extends Component {
     let displayClassName = `float-right ${textColor}`;
 
     return (
-      <div className="my-1">
+      <div 
+        className="my-1"
+        title="Has the boss site spawned yet?"
+      >
         <p className="float-left">Has Boss?</p>
         <p className={displayClassName}>{friendlyDisplayText}</p>
       </div>

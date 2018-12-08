@@ -40,7 +40,8 @@ export default class MobilizingItem extends Component {
 
   render() {
     return (
-      <div>
+      <div
+        title="Whether the incursion has just started (Mobilizing), is in progress (Established), or coming to an end (Withdrawing)">
           {
             this.INCURSIONSTATES[this.props.incursionState]
           }

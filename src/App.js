@@ -76,6 +76,7 @@ class App extends Component {
         <div>
           <div class="container text-center">
             <h1>Incursion Watch</h1>
+            <hr/>
           </div>
           <div className="text-center">
             <div>
@@ -88,15 +89,32 @@ class App extends Component {
               <p>
                 This website is a tool designed to help EVE Online players locate
                 and track the status of Incursions within the game's universe.
+                Refresh the page to get the latest data.
+              </p>
+              <p>
+                It pulls data straight from the <a href="https://esi.evetech.net/">EVE Online API</a>,
+                and as such, certain things aren't readily available (like who owns sovereign space, when applicable).
+                For cases like those, I link systems, regions, and constellations to their respective DOTLAN pages
+                for more info.
+              </p>
+              <p>
+                Hover your mouse over each element for a description of what it is.
               </p>
             </div>
             {this.incs}
           </div>
           <div>
-            <footer className="footer">
+            <footer className="footer m-2">
               <div className="container text-center">
-                <span className="text-muted">
-                  This site was built using React+JSX. 
+                <hr/>
+                <span className="text-muted d-block">
+                  This site was built using ReactJS + bootstrap 4 
+                </span>
+                <span className="text-muted d-block">
+                  (c) 2018 <a href="https://github.com/cornjuliox" className="">Enrico Tuvera Jr</a>
+                </span>
+                <span className="text-muted d-block">
+                  EVE Online & the API I used here are property of CCP Games
                 </span>
               </div>
             </footer>

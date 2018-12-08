@@ -15,11 +15,13 @@ export default class InfestedSystemsItem extends Component {
   render() {
     console.log(this.props.infestedSystems);
     let systems = this.props.infestedSystems.map(item => {
-      return <SolarSystemItem solarSystemId={item} />
+      return <SolarSystemItem solarSystemId={item} helpText="Solar systems affected by incursion penalties."/>
     })
     return (
       <div>
-        <ListGroupItem style={SCROLLABLE_LISTGROUPITEM}>
+        <ListGroupItem 
+          style={SCROLLABLE_LISTGROUPITEM} 
+        >
           <p>Infested Solar Systems:</p>
           <ListGroup className="mt-3">
             {systems}

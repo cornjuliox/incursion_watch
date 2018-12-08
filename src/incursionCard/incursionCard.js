@@ -33,7 +33,8 @@ class IncursionCard extends Component {
                 </InfluenceItem>
                 <SolarSystemItem 
                   solarSystemId={this.props.incursion.staging_solar_system_id}
-                  titleText="Staging System: ">
+                  titleText="Staging System: "
+                  helpText="The solar system the incursion is staging out of.">
                 </SolarSystemItem>
                 <BossItem
                   hasBoss={this.props.incursion.has_boss}>
