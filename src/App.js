@@ -81,7 +81,7 @@ class App extends Component {
           <div className="text-center">
             <div>
               <p>
-                Incursions in EVE Online are EVE encounters in which 
+                Incursions in EVE Online are encounters in which 
                 fleets of pilots work to drive back NPC pirate invasions in 
                 across the game's universe. They represent high-end PVE content
                 and are equivalent to 'raids' in other MMOs.
@@ -93,12 +93,9 @@ class App extends Component {
               </p>
               <p>
                 It pulls data straight from the <a href="https://esi.evetech.net/">EVE Online API</a>,
-                and as such, certain things aren't readily available (like who owns sovereign space, when applicable).
+                but certain things aren't available (like who owns null-sec sovereign space).
                 For cases like those, I link systems, regions, and constellations to their respective DOTLAN pages
                 for more info.
-              </p>
-              <p>
-                Hover your mouse over each element for a description of what it is.
               </p>
             </div>
             {this.incs}
