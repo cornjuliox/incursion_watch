@@ -108,7 +108,13 @@ class App extends Component {
                   This site was built using ReactJS + bootstrap 4 
                 </span>
                 <span className="text-muted d-block">
-                  (c) 2018 <a href="https://github.com/cornjuliox" className="">Enrico Tuvera Jr</a>
+                  (c) 2018 Enrico Tuvera Jr
+                  <a href="https://github.com/cornjuliox">
+                    <i className="fab fa-github-square mx-1 fa-lg"></i>
+                  </a>
+                  <a href="https://linkedin.com/in/enrico-jr-tuvera">
+                    <i className="fab fa-linkedin mx-1 fa-lg"></i>
+                  </a>
                 </span>
                 <span className="text-muted d-block">
                   EVE Online & the API I used here are property of CCP Games
