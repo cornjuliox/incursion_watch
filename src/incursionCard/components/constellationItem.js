@@ -41,6 +41,8 @@ export default class ConstellationComponent extends Component {
                 className="" 
                 title="The constellation where the incursion is happening."
                 href={`https://evemaps.dotlan.net/map/${this.state.regionName}/${this.state.constellationName}`}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <h3 className="">{this.state.constellationName}</h3>
               </a>
@@ -48,6 +50,8 @@ export default class ConstellationComponent extends Component {
                 className=""
                 title="The region that the constellation belongs to."
                 href={`https://evemaps.dotlan.net/map/${this.state.regionName.split(' ').join('_')}`} 
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <h4>({this.state.regionName})</h4>
               </a>

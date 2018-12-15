@@ -46,7 +46,12 @@ export default class SolarSystemItem extends Component {
         title={`${this.props.helpText}`}
       >
         <p className="float-left">{this.props.titleText}</p>
-        <a className="float-right" href={`https://evemaps.dotlan.net/system/${this.state.stagingSolarSystem}`}>
+        <a 
+          className="float-right" 
+          href={`https://evemaps.dotlan.net/system/${this.state.stagingSolarSystem}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <p className={colorText}>{this.state.stagingSolarSystem} ({realSecurityStatus})</p>
         </a> 
       </div>
