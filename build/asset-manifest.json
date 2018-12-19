@@ -1,16 +1,16 @@
 {
   "main.css": "/static/css/main.0cd0fce7.chunk.css",
-  "main.js": "/static/js/main.c08cf911.chunk.js",
-  "main.js.map": "/static/js/main.c08cf911.chunk.js.map",
+  "main.js": "/static/js/main.d1e7ce38.chunk.js",
+  "main.js.map": "/static/js/main.d1e7ce38.chunk.js.map",
   "static/css/1.940a47fb.chunk.css": "/static/css/1.940a47fb.chunk.css",
-  "static/js/1.fd069aed.chunk.js": "/static/js/1.fd069aed.chunk.js",
-  "static/js/1.fd069aed.chunk.js.map": "/static/js/1.fd069aed.chunk.js.map",
+  "static/js/1.10e772d7.chunk.js": "/static/js/1.10e772d7.chunk.js",
+  "static/js/1.10e772d7.chunk.js.map": "/static/js/1.10e772d7.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/css/1.940a47fb.chunk.css.map": "/static/css/1.940a47fb.chunk.css.map",
   "static/media/fruits-watermelon.gif": "/static/media/fruits-watermelon.147c9232.gif",
   "static/css/main.0cd0fce7.chunk.css.map": "/static/css/main.0cd0fce7.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.236090baedbc2671df84225a2711d76b.js": "/precache-manifest.236090baedbc2671df84225a2711d76b.js",
+  "precache-manifest.ae4cb5ecd99e60c5e2969df84b6bd0ad.js": "/precache-manifest.ae4cb5ecd99e60c5e2969df84b6bd0ad.js",
   "service-worker.js": "/service-worker.js"
 }

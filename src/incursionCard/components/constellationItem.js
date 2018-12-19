@@ -40,7 +40,7 @@ export default class ConstellationComponent extends Component {
               <a 
                 className="" 
                 title="The constellation where the incursion is happening."
-                href={`https://evemaps.dotlan.net/map/${this.state.regionName.split(' ').join('_')}/${this.state.constellationName}`}
+                href={`https://evemaps.dotlan.net/map/${this.state.regionName.split(' ').join}/${this.state.constellationName}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

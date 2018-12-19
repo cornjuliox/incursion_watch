@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import IncursionCard from './incursionCard/incursionCard';
+import LoadingModal from './loadingModal/loadingModal';
 import axios from 'axios';
 import chunk from 'lodash.chunk';
 
 import { Row, Col } from 'reactstrap';
 
-import loader from './fruits-watermelon.gif';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -66,9 +66,8 @@ class App extends Component {
 
     if (this.incs === undefined || this.incs.length === 0) {
       return (
-        <div className="m-5 text-center">
-          <img src={loader} alt=""/>
-          <p>Please enjoy this watermelon while we fetch incursion data.</p>
+        <div>
+          <LoadingModal></LoadingModal>
         </div>
       )
     } else {
