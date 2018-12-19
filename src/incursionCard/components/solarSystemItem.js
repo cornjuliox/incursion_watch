@@ -21,14 +21,24 @@ export default class SolarSystemItem extends Component {
   render() {
     let colorText = '';
 
-    // NOTE: this is just to match the way sec status displayed in-game
     let realSecurityStatus = Math.round(this.state.securityStatus * 10) / 10;
+
+    // NOTE: these checks are just to match the way sec status displayed in-game
+    //       otherwise we'd have stuff like '0', '1', and '-1' showing up.
+    // --- BEGIN ---
     if (realSecurityStatus === 0) {
       realSecurityStatus = '0.0';
     }
+
     if (realSecurityStatus === 1) {
       realSecurityStatus = '1.0';
     }
+
+    if (realSecurityStatus === -1) {
+      realSecurityStatus = '-1.0';
+    }
+    // --- END ---
+
     if (realSecurityStatus >= 0.5) {
       colorText = 'text-success';
     }
