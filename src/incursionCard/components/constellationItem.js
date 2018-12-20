@@ -14,7 +14,8 @@ export default class ConstellationComponent extends Component {
       .then(res => {
         this.setState({
           constellationName: res.data.name,
-          regionId: res.data.region_id
+          regionId: res.data.region_id,
+          randomSystem: res.data.systems[0]
         });
         return axios.get(`https://esi.evetech.net/latest/universe/regions/${res.data.region_id}`)
       })
@@ -24,6 +25,7 @@ export default class ConstellationComponent extends Component {
         })
       })
       .then(() => {
+        // return axios.get(`https://esi.evetech.net2`)
       })
   }
 
@@ -40,7 +42,7 @@ export default class ConstellationComponent extends Component {
               <a 
                 className="" 
                 title="The constellation where the incursion is happening."
-                href={`https://evemaps.dotlan.net/map/${this.state.regionName.split(' ').join}/${this.state.constellationName}`}
+                href={`https://evemaps.dotlan.net/map/${this.state.regionName.split(' ').join('_')}/${this.state.constellationName}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

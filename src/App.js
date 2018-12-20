@@ -59,7 +59,6 @@ class App extends Component {
           random: 'foobar'
         })
       })
-
   }
 
   render() {
