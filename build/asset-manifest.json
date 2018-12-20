@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.0cd0fce7.chunk.css",
-  "main.js": "/static/js/main.d1e7ce38.chunk.js",
-  "main.js.map": "/static/js/main.d1e7ce38.chunk.js.map",
+  "main.js": "/static/js/main.2646f107.chunk.js",
+  "main.js.map": "/static/js/main.2646f107.chunk.js.map",
   "static/css/1.940a47fb.chunk.css": "/static/css/1.940a47fb.chunk.css",
   "static/js/1.10e772d7.chunk.js": "/static/js/1.10e772d7.chunk.js",
   "static/js/1.10e772d7.chunk.js.map": "/static/js/1.10e772d7.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/media/fruits-watermelon.gif": "/static/media/fruits-watermelon.147c9232.gif",
   "static/css/main.0cd0fce7.chunk.css.map": "/static/css/main.0cd0fce7.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.ae4cb5ecd99e60c5e2969df84b6bd0ad.js": "/precache-manifest.ae4cb5ecd99e60c5e2969df84b6bd0ad.js",
+  "precache-manifest.955926479a5a53afa2a738691dcf5b34.js": "/precache-manifest.955926479a5a53afa2a738691dcf5b34.js",
   "service-worker.js": "/service-worker.js"
 }
