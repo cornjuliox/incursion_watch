@@ -1,0 +1,51 @@
+version: '3'
+services:
+  # wordpress:
+  #   image: wordpress:5.0.3-php7.1-apache
+  #   restart: always
+  #   environment:
+  #     WORDPRESS_DB_HOST: database
+  #     WORDPRESS_DB_USER: root
+  #     WORDPRESS_DB_NAME: wordpressmain
+  #     WORDPRESS_DB_PASSWORD: supersecretpw
+  #   volumes:
+  #     - wordpress_volume:/var/www/html
+
+  # ghostblog:
+  #   image: ghost:2.14-alpine
+  #   restart: always
+  #   environment:
+  #     database__client: mysql
+  #     database__connection__host: database
+  #     database__connection__user: root
+  #     database__connection__password: supersecretpw
+  #     database__connection_database: ghostblogmain
+  #     url: http://blog.isktools.net:8079
+  #   volumes:
+  #     - ghost_volume:/var/lib/ghost
+
+  # database:
+  #   build:
+  #     context: ./database/
+  #   restart: always
+  #   ports:
+  #     - 8081:3306
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: supersecretpw
+  #     MYSQL_DATABASE: ghostblogmain
+  #   volumes:
+  #     - mysql_volume:/var/lib/mysql
+
+  # webserver:
+  #   build:
+  #     context:.
+  #   restart: always
+  #   ports:
+  #     - 8079:80
+  incursions:
+    build:
+      context: ./webserver
+    restart: always
+    ports:
+      - 80:80
+

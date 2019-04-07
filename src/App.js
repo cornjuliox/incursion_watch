@@ -63,6 +63,8 @@ class App extends Component {
 
   render() {
 
+    console.log(React.version);
+
     if (this.incs === undefined || this.incs.length === 0) {
       return (
         <div>
@@ -77,6 +79,7 @@ class App extends Component {
             <hr/>
           </div>
           <div className="text-center">
+            {this.incs}
             <div>
               <p>
                 Incursions in EVE Online are encounters in which 
@@ -92,11 +95,10 @@ class App extends Component {
               <p>
                 It pulls data straight from the <a href="https://esi.evetech.net/">EVE Online API</a>,
                 but certain things aren't available (like who owns null-sec sovereign space).
-                For cases like those, I link systems, regions, and constellations to their respective DOTLAN pages
+                For cases like those I link systems, regions, and constellations to their respective DOTLAN pages
                 for more info.
               </p>
             </div>
-            {this.incs}
           </div>
           <div>
             <footer className="footer m-2">
